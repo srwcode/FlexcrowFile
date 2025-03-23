@@ -83,8 +83,8 @@ const ProductEdit = () => {
       newErrors.price = 'Invalid price format';
     } else {
       const price = parseFloat(priceStr);
-      if (price < 1) {
-        newErrors.price = 'Price must be greater than 1';
+      if (price < 10) {
+        newErrors.price = 'Price must be greater than 10';
       }
     }
 
