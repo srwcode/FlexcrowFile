@@ -204,7 +204,7 @@ const SignIn = () => {
                   Password
                 </label>
                 <Link to="#" className="text-sm font-medium text-[#0d6577] hover:text-[#0d6577]/80">
-                  Forgot password?
+                  Forgot Password?
                 </Link>
               </div>
               <div className="relative">
@@ -228,7 +228,7 @@ const SignIn = () => {
               disabled={loading}
               className="w-full flex items-center justify-center gap-2 bg-[#0d6577] hover:bg-[#0d6577]/90 text-white font-medium py-3 px-4 rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[#0d6577] focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? 'Signing in...' : (
+              {loading ? 'Signing In...' : (
                 <>
                   Sign in <ArrowRight className="h-4 w-4" />
                 </>
