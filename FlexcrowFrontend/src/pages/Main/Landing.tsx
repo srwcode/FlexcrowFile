@@ -292,7 +292,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="text-sm mutedforeground">Transaction ID</p>
-                        <p className="font-medium text-gray-900">#FC-2024-0195</p>
+                        <p className="font-medium text-gray-900">#FC-2025-1234</p>
                       </div>
                     </div>
                     <div className="bg-green-100 px-3 py-1 rounded-full">
@@ -302,19 +302,19 @@ const Index = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between">
                       <p className="mutedforeground">Buyer:</p>
-                      <p className="font-medium text-gray-900">Alex Johnson</p>
+                      <p className="font-medium text-gray-900">Wittawin Susutti</p>
                     </div>
                     <div className="flex justify-between">
                       <p className="mutedforeground">Seller:</p>
-                      <p className="font-medium text-gray-900">Matthew Brown</p>
+                      <p className="font-medium text-gray-900">Warin Wattanapornprom</p>
                     </div>
                     <div className="flex justify-between">
                       <p className="mutedforeground">Product:</p>
-                      <p className="font-medium text-gray-900">iPhone 16 Pro Max</p>
+                      <p className="font-medium text-gray-900">Model</p>
                     </div>
                     <div className="flex justify-between">
                       <p className="mutedforeground">Amount:</p>
-                      <p className="font-bold text-lg text-gray-900">฿2,500.00</p>
+                      <p className="font-bold text-lg text-gray-900">฿2,500,000.00</p>
                     </div>
                     <div className="border-t pt-4 mt-4">
                       <div className="flex justify-between items-center">
@@ -442,22 +442,22 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { 
-                name: "Sarah Thompson", 
-                role: "E-commerce Seller",
-                text: "Flexcrow has transformed how I do business online. The escrow service gives my customers confidence, and I've seen a 30% increase in sales.",
+                name: "Wittawin Susutti", 
+                role: "Buyer",
+                text: "The Flexcrow system is outstanding and definitely deserves an A in CSS234.",
                 rating: 5
               },
               { 
-                name: "Mike Rodriguez", 
-                role: "Freelance Developer",
-                text: "As a freelancer, getting paid can be stressful. Flexcrow protects both me and my clients. Now I focus on coding instead of chasing payments.",
+                name: "Warin Wattanapornprom", 
+                role: "Seller",
+                text: "I completely agree with Wittawin — this project truly deserves an A in every subject, including the Capstone Project.",
                 rating: 5
               },
               { 
-                name: "Jordan Lee", 
-                role: "Digital Art Buyer",
-                text: "I was hesitant to purchase expensive digital art online until I found Flexcrow. Their escrow service gave me the confidence to make larger purchases.",
-                rating: 4
+                name: "Chukiat Worasucheep", 
+                role: "Someone",
+                text: "Good, very good, the best! This project was so good that I didn’t need to <b>interrupt</b> or change anything.",
+                rating: 5
               }
             ].map((testimonial, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-sm border hover:shadow-md transition-all">
