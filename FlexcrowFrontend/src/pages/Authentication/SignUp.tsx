@@ -332,7 +332,7 @@ const SignUp = () => {
                   name="phone"
                   type="text"
                   required
-                  placeholder="+66xxxxxxxxx"
+                  placeholder="0xxxxxxxxx"
                   className="w-full rounded-lg border border-gray-300 bg-white py-3 px-4 text-gray-900 shadow-sm focus:border-[#0d6577] focus:outline-none focus:ring-1 focus:ring-[#0d6577] transition-colors"
                   onChange={handleChange}
                 />
@@ -385,9 +385,9 @@ const SignUp = () => {
               disabled={loading}
               className="w-full flex items-center justify-center gap-2 bg-[#0d6577] hover:bg-[#0d6577]/90 text-white font-medium py-3 px-4 rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[#0d6577] focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? 'Signing up...' : (
+              {loading ? 'Signing Up...' : (
                 <>
-                  Sign up <ArrowRight className="h-4 w-4" />
+                  Sign Up <ArrowRight className="h-4 w-4" />
                 </>
               )}
             </button>
