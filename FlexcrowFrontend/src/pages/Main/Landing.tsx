@@ -277,7 +277,7 @@ const Index = () => {
               </div>
               <div className="flex items-center gap-2 mutedforeground">
                 <CheckCircle2 className="h-5 w-5 text-flexcrow-500" />
-                <span>Minimum amount ฿1</span>
+                <span>Minimum amount ฿10</span>
               </div>
             </div>
             <div className="hidden lg:block lg:w-1/2 relative">
@@ -632,7 +632,7 @@ const Index = () => {
           
           <div className="border-t border-gray-600 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2024 Flexcrow. All rights reserved.</p>
+              <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Flexcrow. All rights reserved.</p>
               <div className="flex space-x-4">
                 <a href="/terms" className="text-gray-400 hover:text-white text-sm">Terms of Service</a>
                 <a href="/privacy" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
