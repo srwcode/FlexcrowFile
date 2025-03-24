@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Mail, Lock, ArrowRight } from 'lucide-react';
 import config from '../../config';
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 interface FormData {
   email: string;
@@ -96,6 +97,9 @@ const SignIn = () => {
       [e.target.name]: e.target.value
     });
   };
+
+  const [showPassword, setShowPassword] = useState<boolean>(false);
+  const togglePasswordView = () => setShowPassword(!showPassword);
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
@@ -214,12 +218,23 @@ const SignIn = () => {
                 <input
                   id="password"
                   name="password"
-                  type="password"
+                  type={showPassword ? "password" : "text"}
                   required
                   placeholder="••••••••"
                   className="pl-10 w-full rounded-lg border border-gray-300 bg-white py-3 px-4 text-gray-900 shadow-sm focus:border-[#0d6577] focus:outline-none focus:ring-1 focus:ring-[#0d6577] transition-colors"
                   onChange={handleChange}
                 />
+                {showPassword ? (
+                  <FaRegEyeSlash
+                    className="absolute right-5 right-5 top-1/2 transform -translate-y-1/2 cursor-pointer"
+                    onClick={togglePasswordView}
+                  />
+                ) : (
+                  <FaRegEye
+                    className="absolute right-5 right-5 top-1/2 transform -translate-y-1/2 cursor-pointer"
+                    onClick={togglePasswordView}
+                  />
+                )}
               </div>
             </div>
 
